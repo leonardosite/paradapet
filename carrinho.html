@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="logotipo.png">
+    <title>Parada Pet</title>
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="mobile.css">
+    <link rel="stylesheet" href="carrinho.css">
+  
+</head>
+<body>
+    <style>
+        @media (max-width:700px){
+             /* ATIVAR PARA MOBILE */
+
+            #nav-icone-menu,.fundo-menu,.fundo-lupa,#input-lupa,#logo{
+                display: flex;
+             }
+             .caminho-mobile,#listamob,#fechar-busca{
+                display: flex;
+             }
+             body,html{
+            padding: 0px;
+            margin:0px;
+            width:100%;
+           overflow-x: hidden;
+        }
+
+        section{
+            display: flex;
+            width: 100%;
+            transform: translateX(-5px) translateY(-500px);
+        }
+        form{
+            width: 100%;
+            transform: translateY(-250px);
+        }
+        #sub-comprar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(5px);
+            text-align: center;
+        }
+        }
+    </style>
+
+    <header> 
+        <!-- // MENU -->
+        <div class="fundo-menu">
+
+        <!--Icone Fechar Menu-->
+            <svg xmlns="http://www.w3.org/2000/svg"  class="clique-menu" id="nav-icone-menu"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+
+         <!--Icone Fechar Menu-->
+         <div class="fechar-menu">
+            <i class="bi bi-x-circle"></i>
+        </div>
+        
+        <!--Navegação dos Menus-->
+         <div class="fundo-texto-menu">
+            <a href="categoria.html"><p class="menu-texto">Ração</p></a>
+            <a href="categoria.htm"><p class="menu-texto">Remédios</p></a>
+            <a href="categoria.htm"><p class="menu-texto">Acessórios</p></a>
+            <a href="categoria.htm"><p class="menu-texto">Camas</p> </a>
+            <a href="categoria.htm"><p class="menu-texto"> Casas</p> </a>
+            <a href="categoria.htm"><p class="menu-texto">Outros</p> </a>
+            <a href="categoria.htm"><p class="menu-texto">Ração</p></a>
+            <a href="categoria.htm"><p class="menu-texto">Remédios</p></a>
+            <a href="categoria.htm"><p class="menu-texto">Acessórios</p></a>
+            <a href="categoria.htm"><p class="menu-texto">Camas</p> </a>
+            <a href="categoria.htm"><p class="menu-texto"> Casas</p></a> 
+            <a href="categoria.htm"><p class="menu-texto">Outros</p></a>  
+         </div>
+
+         </div>
+
+      <!--// LOGOTIPO-->
+      <img src="logotipo.png" id="logotipo">
+
+      <!--Logotipo Mobile-->
+      <img src="paradapet.png" id="logo">
+
+         <!--// NAVEGAÇÃO-->
+        <nav >
+            <p id="texto-nav" class="clique-menu1">Ração</p>
+            <p id="texto-nav" class="clique-menu2">Remédios</p>
+            <p id="texto-nav" class="clique-menu3">Acessórios</p>
+            <p id="texto-nav" class="clique-menu4">Ambiente</p> 
+            <p id="texto-nav" class="clique-menu5">Promoções</p>
+            <p id="texto-nav" class="clique-menu6">Outros</p> 
+        </nav>
+
+        <!--// DADOS DA NAVEGAÇÃO-->
+        <div class="fundo-menu1">
+            <div class="lista">
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">GATOS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">MARCAS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+            </div>
+
+            <p class="menu1-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+            
+        </div>
+
+        <div class="fundo-menu2">
+            <div class="lista">
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">CÃES</p></a>
+                    <a href=""><li id="infor-lista">Efipet</li></a>
+                    <a href=""><li id="infor-lista">Longevi</li></a>
+                    <a href=""><li id="infor-lista">Centril</li></a>
+                    <a href=""><li id="infor-lista">Evolo</li></a>
+                    <a href=""><li id="infor-lista">Condromax</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">GATOS</p></a>
+                    <a href=""><li id="infor-lista">Efipet</li></a>
+                    <a href=""><li id="infor-lista">Longevi</li></a>
+                    <a href=""><li id="infor-lista">Centril</li></a>
+                    <a href=""><li id="infor-lista">Evolo</li></a>
+                    <a href=""><li id="infor-lista">Condromax</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Efipet</li></a>
+                    <a href=""><li id="infor-lista">Longevi</li></a>
+                    <a href=""><li id="infor-lista">Centril</li></a>
+                    <a href=""><li id="infor-lista">Evolo</li></a>
+                    <a href=""><li id="infor-lista">Condromax</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">MARCAS</p></a>
+                    <a href=""><li id="infor-lista">Efipet</li></a>
+                    <a href=""><li id="infor-lista">Longevi</li></a>
+                    <a href=""><li id="infor-lista">Centril</li></a>
+                    <a href=""><li id="infor-lista">Evolo</li></a>
+                    <a href=""><li id="infor-lista">Condromax</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+            </div>
+
+            <p class="menu2-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+            
+        </div>
+
+        <div class="fundo-menu3">
+            <div class="lista">
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">CÃES</p></a>
+                    <a href=""><li id="infor-lista">Camas</li></a>
+                    <a href=""><li id="infor-lista">Petiscos</li></a>
+                    <a href=""><li id="infor-lista">Casas</li></a>
+                    <a href=""><li id="infor-lista">Roupas</li></a>
+                    <a href=""><li id="infor-lista">Decorátivos Visual</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">GATOS</p></a>
+                    <a href=""><li id="infor-lista">Camas</li></a>
+                    <a href=""><li id="infor-lista">Petiscos</li></a>
+                    <a href=""><li id="infor-lista">Casas</li></a>
+                    <a href=""><li id="infor-lista">Roupas</li></a>
+                    <a href=""><li id="infor-lista">Decorátivos Visual</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Camas</li></a>
+                    <a href=""><li id="infor-lista">Petiscos</li></a>
+                    <a href=""><li id="infor-lista">Casas</li></a>
+                    <a href=""><li id="infor-lista">Roupas</li></a>
+                    <a href=""><li id="infor-lista">Decorátivos Visual</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">MARCAS</p></a>
+                    <a href=""><li id="infor-lista">Camas</li></a>
+                    <a href=""><li id="infor-lista">Petiscos</li></a>
+                    <a href=""><li id="infor-lista">Casas</li></a>
+                    <a href=""><li id="infor-lista">Roupas</li></a>
+                    <a href=""><li id="infor-lista">Decorátivos Visual</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+            </div>
+
+            <p class="menu3-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+            
+        </div>
+
+        <div class="fundo-menu4">
+            <div class="lista">
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">CÃES</p></a>
+                    <a href=""><li id="infor-lista">Coleiras</li></a>
+                    <a href=""><li id="infor-lista">Tapetes</li></a>
+                    <a href=""><li id="infor-lista">Sabonete</li></a>
+                    <a href=""><li id="infor-lista">Cadeiras</li></a>
+                    <a href=""><li id="infor-lista">Areia</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">GATOS</p></a>
+                    <a href=""><li id="infor-lista">Coleiras</li></a>
+                    <a href=""><li id="infor-lista">Tapetes</li></a>
+                    <a href=""><li id="infor-lista">Sabonete</li></a>
+                    <a href=""><li id="infor-lista">Cadeiras</li></a>
+                    <a href=""><li id="infor-lista">Areia</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Coleiras</li></a>
+                    <a href=""><li id="infor-lista">Tapetes</li></a>
+                    <a href=""><li id="infor-lista">Sabonete</li></a>
+                    <a href=""><li id="infor-lista">Cadeiras</li></a>
+                    <a href=""><li id="infor-lista">Areia</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">MARCAS</p></a>
+                    <a href=""><li id="infor-lista">Coleiras</li></a>
+                    <a href=""><li id="infor-lista">Tapetes</li></a>
+                    <a href=""><li id="infor-lista">Sabonete</li></a>
+                    <a href=""><li id="infor-lista">Cadeiras</li></a>
+                    <a href=""><li id="infor-lista">Areia</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+            </div>
+
+            <p class="menu4-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+            
+        </div>
+
+        <div class="fundo-menu5">
+            <div class="lista">
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">CÃES</p></a>
+                    <a href=""><li id="infor-lista">Promoção de Ração</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Remédios</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Acessórios</li></a>
+                    <a href=""><li id="infor-lista">Promoção para o seu Ambiente</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">GATOS</p></a>
+                    <a href=""><li id="infor-lista">Promoção de Ração</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Remédios</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Acessórios</li></a>
+                    <a href=""><li id="infor-lista">Promoção para o seu Ambiente</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Promoção de Ração</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Remédios</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Acessórios</li></a>
+                    <a href=""><li id="infor-lista">Promoção para o seu Ambiente</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">MARCAS</p></a>
+                    <a href=""><li id="infor-lista">Promoção de Ração</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Remédios</li></a>
+                    <a href=""><li id="infor-lista">Promoção de Acessórios</li></a>
+                    <a href=""><li id="infor-lista">Promoção para o seu Ambiente</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+            </div>
+
+            <p class="menu5-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+            
+        </div>
+
+        <div class="fundo-menu6">
+            <div class="lista">
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">CÃES</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a> 
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">GATOS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">OUTROS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+
+                <ul class="bloco-lista">
+                    <a href=""><p id="titulo-lista">MARCAS</p></a>
+                    <a href=""><li id="infor-lista">Golden</li></a>
+                    <a href=""><li id="infor-lista">Gran Plus</li></a>
+                    <a href=""><li id="infor-lista">Pet Love</li></a>
+                    <a href=""><li id="infor-lista">Petz</li></a>
+                    <a href=""><li id="infor-lista">Whiskas</li></a>
+                    <a href=""><li id="infor-lista">Todos</li></a>
+                </ul>
+            </div>
+
+            <p class="menu6-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+            
+        </div>
+
+       
+        <!--// LUPA -->
+        <div class="fundo">
+            <div class="lupa">
+                <i class="bi bi-search"></i>
+            </div>
+    
+            <div class="pesquisa" >
+                
+                <input type="text" name="" id="input-pesquisa" placeholder="O que procura">
+                
+                
+                <!--Categoria oficial-->
+                <ul class="lupa-pesquisa" id="lista">
+                    <a href=""><li class="dados-lupa" id="lista1">Rações</li></a>
+                    <a href=""><li class="dados-lupa" id="lista1">Remédios</li></a>
+                    <a href=""><li class="dados-lupa">Acessórios</li></a>
+                    <a href=""><li class="dados-lupa">Ambientes</li></a>
+                    <a href=""><li class="dados-lupa">Promoções</li></a>
+                </ul>
+            </div>
+    
+            <div class="fechar">
+                <i class="bi bi-x-circle"></i>
+            </div>
+         </div>
+
+        <!--//CARRINHO-->
+        <div class="fundo-carrinho" >
+          <a href="carrinho.html" id="ircarrinho"><i class="bi bi-bag-heart-fill" id="nav-carrinho" class="clique-carro"></i></a>       
+         </div>
+            
+        <!--// LUPA MOBILE -->
+        <article class="config-lupa">
+            <div class="fundo-lupa">
+                <i class="bi bi-search" id="lupamob"></i>   
+                <input type="search" id="input-lupa" placeholder="O Que Você Procura ?">
+            </div>
+            <i class="bi bi-x-circle" id="fechar-busca"></i>
+            <!--DADOS DOS MENU -->
+             <ul id="listamob">
+                <a href=""><li class="dados-lupa" id="lista1">Rações</li></a>
+                <a href=""><li class="dados-lupa" id="lista1">Remédios</li></a>
+                <a href=""><li class="dados-lupa">Acessórios</li></a>
+                <a href=""><li class="dados-lupa">Ambientes</li></a>
+                <a href=""><li class="dados-lupa">Promoções</li></a>
+             </ul>
+         </article>
+   
+    </header>
+
+
+<main>
+    <div class="fundocart">
+    <h1 id="texto-carro">Carrinho de Compras</h1>
+
+    <div id="cartDetails">
+        
+    </div>
+
+    <button id="botao" onclick="tudo()">Comprar</button>
+    </div>
+</main>
+
+
+<section class="seçao">
+
+    <article class="fundo-comprar">
+        <h2 id="titulo-comprar">Preencha o Formulário</h2>
+        <h3 id="sub-comprar"> Enviaremos o Ebook pelo a Confirmação do seu Produto após a Comprovação do Pagamento</h3>
+    </article>
+    
+    
+    <article class="formulario-produto">
+        <i class="bi bi-x-circle" id="fechar-informaçao"></i>
+
+        <form action="https://formsubmit.co/lojaparadapet@gmail.com" method="POST">
+            <input type="text" name="Cliente" placeholder="Insira seu Nome" id="nome" required>
+            <input type="email" name="email" id="email" placeholder="Endereço de e-mail">
+            <input type="tel" name="Telefone" id="nome" placeholder="Seu Numero de Telefone" required>
+            <input type="hidden" name="_subject" value="Novo Pedido !">
+            
+            <textarea name="Pedidos" id="mensagem" ></textarea>
+        <textarea name="Valor" id="total" ></textarea>
+    
+        <input type="hidden" name="_captcha" value="false">
+            <button type="submit" id="botao-pagar">Pagar</button>
+       </form>
+
+
+
+     
+    
+    
+    </article>
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    <script src="produto.js"></script>
+    <script src ="script.js"></script>
+</body>
+</html>
